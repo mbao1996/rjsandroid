@@ -1,6 +1,9 @@
 devices:
 b43052abe230
 
+class:  android.widget.TextView
+package:  com.huawei.android.launcher
+
 ¡­or create a new repository on the command line
 
 echo "# rjsandroid" >> README.md
