@@ -3,6 +3,9 @@ b43052abe230
 
 class:  android.widget.TextView
 package:  com.huawei.android.launcher
+appActivity:  com.rongjinsuo.android/com.rjs.rongjinsuo.android.splash.SplashActivity
+
+com.android.calculator2/.Calculator t15
 
 ¡­or create a new repository on the command line
 
