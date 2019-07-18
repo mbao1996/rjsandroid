@@ -1,0 +1,4 @@
+com.rongjinsuo.android_v5.5.5_555.apk
+
+package: name='com.rongjinsuo.android'
+laucherActivity: name='com.rjs.rongjinsuo.android.splash.SplashActivity'
