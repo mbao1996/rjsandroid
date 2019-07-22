@@ -29,12 +29,12 @@ time.sleep(1)
 el = getElement(driver, 'id', 'com.rongjinsuo.android:id/main_tabs_btn2')
 el.click()
 time.sleep(1)
-'''
+
 #  选择优选
-el = driver.find_element_by_name(u'鲸粉优选')
+el = getElement(driver, 'name', u'鲸粉优选')
 el.click()
-time.sleep(2)
-'''
+time.sleep(1)
+
 xpath = '//android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]'
 xpath_check = xpath + '/android.widget.LinearLayout[1]/android.widget.LinearLayout[4]'
 xpath_check = xpath_check + '/android.widget.LinearLayout/android.widget.TextView'

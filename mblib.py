@@ -61,6 +61,8 @@ def isElement(driver, identifyBy, c):
             el = driver.find_element_by_id(c)
         elif identifyBy == "xpath":
             el = driver.find_element_by_xpath(c)
+        elif identifyBy == "name":
+            el = driver.find_element_by_name(c)
         flag = True
     except Exception as e:
         flag = False
