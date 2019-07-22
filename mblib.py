@@ -66,3 +66,10 @@ def isElement(driver, identifyBy, c):
         flag = False
     return(flag, el)
 
+def getElement(driver, identifyBy, c):
+    flag = False
+    while( not flag ):
+        flag, el = isElement(driver, identifyBy, c)
+        if( not flag ):
+            time.sleep(0.1)
+    return(el)
