@@ -6,6 +6,8 @@ desired_caps = {}
 desired_caps['platformName'] = 'Android'
 desired_caps['platformVersion'] = '4.4.4'
 desired_caps['deviceName'] = 'b43052abe230'
+#desired_caps['platformVersion'] = '9.0.1'
+#desired_caps['deviceName'] = '3HX0217511010325'
 desired_caps['appPackage'] = 'com.rongjinsuo.android'
 desired_caps['appActivity'] = 'com.rjs.rongjinsuo.android.splash.SplashActivity'
 #desired_caps['unicodeKeyboard'] = True
@@ -29,12 +31,12 @@ time.sleep(1)
 el = getElement(driver, 'id', 'com.rongjinsuo.android:id/main_tabs_btn2')
 el.click()
 time.sleep(1)
-
+'''
 #  选择优选
 el = getElement(driver, 'name', u'鲸粉优选')
 el.click()
 time.sleep(1)
-
+'''
 xpath = '//android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]'
 xpath_check = xpath + '/android.widget.LinearLayout[1]/android.widget.LinearLayout[4]'
 xpath_check = xpath_check + '/android.widget.LinearLayout/android.widget.TextView'
@@ -54,10 +56,12 @@ el.click()
 #  点击立即加入
 el = getElement(driver, 'id', 'com.rongjinsuo.android:id/monthMore_btn_invest')
 el.click()
+
 # 填入金额
 el = getElement(driver, 'id', 'com.rongjinsuo.android:id/normal_purchase_edit_money')
 el.click()
-#el.send_keys('8866.42')
+el.send_keys('8866.42')
+'''
 driver.press_keycode(KEYCODE_8)
 driver.press_keycode(KEYCODE_8)
 driver.press_keycode(KEYCODE_6)
@@ -65,6 +69,7 @@ driver.press_keycode(KEYCODE_6)
 driver.press_keycode(KEYCODE_PERIOD)
 driver.press_keycode(KEYCODE_4)
 driver.press_keycode(KEYCODE_2)
+'''
 driver.press_keycode(KEYCODE_ESCAPE)
 
 # 取红包
